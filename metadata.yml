@@ -1,6 +1,6 @@
 Identifier: eos69jj
 Slug: neisseria-gonorrhoeae-activity
-Status: In progress
+Status: Ready
 Title: N.gonorrhoeae antimicrobial activity
 Description: Deep learning graph neural network (D-MPNN) that predicts the 
   probability of a small molecule inhibiting Neisseria gonorrhoeae growth. This 
@@ -41,6 +41,18 @@ Source Code: https://github.com/jackievaleri/ngonorrhoeae_abx_ml_discovery
 License: MIT
 Contributor: GemmaTuron
 Incorporation Date: '2026-06-24'
+Last Packaging Date: '2026-06-26'
+Release: v1.0.0
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos69jj.zip
+DockerHub: https://hub.docker.com/r/ersiliaos/eos69jj
+Docker Architecture:
+  - AMD64
+  - ARM64
 Model Size: 442.0
 Environment Size: 4095.0
+Image Size: 4966.4
+Computational Performance 1: 39.61
+Computational Performance 2: 30.07
+Computational Performance 3: 69.74
+Computational Performance 4: 489.04
+Computational Performance 5: -1.0
