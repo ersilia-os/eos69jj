@@ -1,7 +1,8 @@
 # N.gonorrhoeae antimicrobial activity
 
-Deep learning graph neural network (D-MPNN) that predicts the probability of a small molecule inhibiting Neisseria gonorrhoeae growth. This is the retrained "Round 2" model, trained on duplicate growth-inhibition screening at 50 uM against N. gonorrhoeae ATCC 49226 for 1755 clinically approved drugs (Pharmakon), an internal 37K-compound library, and a first round of experimentally validated hits. It was used to rescreen the Broad 800K library and identify compound A1, which reduced N. gonorrhoeae titers in an in vivo mouse vaginal infection model.
+Deep learning graph neural network (D-MPNN) that predicts the probability of a small molecule inhibiting Neisseria gonorrhoeae growth. This is the retrained Round 2 model, trained on duplicate growth-inhibition screening at 50 uM against N. gonorrhoeae ATCC 49226 for 1755 clinically approved drugs (Pharmakon), an internal 37K-compound library, and a first round of experimentally validated hits. It was used to rescreen the Broad 800K library and identify compound A1, which reduced N. gonorrhoeae titers in an in vivo mouse vaginal infection model.
 
+This model was incorporated on 2026-06-24.
 
 
 ## Information
@@ -34,8 +35,11 @@ Below are the **Output Columns** of the model:
 ### Source and Deployment
 - **Source:** `Local`
 - **Source Type:** `External`
+- **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos69jj.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos69jj.zip)
 
 ### Resource Consumption
+- **Model Size (Mb):** `442`
+- **Environment Size (Mb):** `4095`
 
 
 ### References
