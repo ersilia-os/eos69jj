@@ -2,45 +2,40 @@ Identifier: eos69jj
 Slug: neisseria-gonorrhoeae-activity
 Status: In progress
 Title: N.gonorrhoeae antimicrobial activity
-Description: Deep learning ML model trained on an in-house collection of two 
-  libraries, 1755 clinically approved drugs and  an internal small molecule 
-  library of 37K compounds. Experimental conditions include a duplicate test at 
-  50uM final concentration on N.gonorrohoeae ATCC49226 (susceptible strain). The
-  model has been used to prospectively screen 5M compounds identifying 58 
-  compounds with activity against the WT strain, of which 22 had good chemical 
-  properties (no nitro group) and 8 showed activity in MDR strains.
+Description: Deep learning graph neural network (D-MPNN) that predicts the
+  probability of a small molecule inhibiting Neisseria gonorrhoeae growth. This
+  is the retrained "Round 2" model, trained on duplicate growth-inhibition
+  screening at 50 uM against N. gonorrhoeae ATCC 49226 for 1755 clinically
+  approved drugs (Pharmakon), an internal 37K-compound library, and a first
+  round of experimentally validated hits. It was used to rescreen the Broad
+  800K library and identify compound A1, which reduced N. gonorrhoeae titers in
+  an in vivo mouse vaginal infection model.
 Deployment:
   - Local
-  - Online
-Source: Local, Online
-Source Type: Internal, Replicated, External
-Task: Annotation, Representation, Sampling
-Subtask: Property calculation or prediction, Activity prediction, Featurization,
-  Projection, Similarity search, Generation
+Source: Local
+Source Type: External
+Task: Annotation
+Subtask: Activity prediction
 Input:
   - Compound
 Input Dimension: 1
 Output:
-  - Value
   - Score
-  - Compound
-  - Text
 Output Dimension: 1
-Output Consistency: Fixed, Variable
-Interpretation: The output of this template model should be interpreted like 
-  this.
+Output Consistency: Fixed
+Interpretation: Higher score indicates greater predicted probability of growth inhibition against Neisseria gonorrhoeae.
 Tag:
   - Antimicrobial activity
   - Gram-negative bacteria
+  - Chemical graph model
 Biomedical Area:
-  - Biomedical Area 1
-  - Biomedical Area 2
+  - Gonorrhea
+  - Antimicrobial resistance
 Target Organism:
-  - Target Organism 1
-  - Target Organism 2
-Publication Type: Peer reviewed, Preprint, Other
+  - Neisseria gonorrhoeae
+Publication Type: Peer reviewed
 Publication Year: 2026
-Publication: https://www.doi.org/10.1126/scitranslmed.ads4699
+Publication: https://doi.org/10.1126/scitranslmed.ads4699
 Source Code: https://github.com/jackievaleri/ngonorrhoeae_abx_ml_discovery
 License: MIT
 Contributor: GemmaTuron

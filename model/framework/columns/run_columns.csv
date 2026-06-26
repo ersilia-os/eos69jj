@@ -1,1 +1,2 @@
 name,type,direction,description
+activity_score,float,high,Predicted probability that the molecule inhibits Neisseria gonorrhoeae growth
