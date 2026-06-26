@@ -2,14 +2,14 @@ Identifier: eos69jj
 Slug: neisseria-gonorrhoeae-activity
 Status: In progress
 Title: N.gonorrhoeae antimicrobial activity
-Description: Deep learning graph neural network (D-MPNN) that predicts the
-  probability of a small molecule inhibiting Neisseria gonorrhoeae growth. This
-  is the retrained "Round 2" model, trained on duplicate growth-inhibition
-  screening at 50 uM against N. gonorrhoeae ATCC 49226 for 1755 clinically
-  approved drugs (Pharmakon), an internal 37K-compound library, and a first
-  round of experimentally validated hits. It was used to rescreen the Broad
-  800K library and identify compound A1, which reduced N. gonorrhoeae titers in
-  an in vivo mouse vaginal infection model.
+Description: Deep learning graph neural network (D-MPNN) that predicts the 
+  probability of a small molecule inhibiting Neisseria gonorrhoeae growth. This 
+  is the retrained Round 2 model, trained on duplicate growth-inhibition 
+  screening at 50 uM against N. gonorrhoeae ATCC 49226 for 1755 clinically 
+  approved drugs (Pharmakon), an internal 37K-compound library, and a first 
+  round of experimentally validated hits. It was used to rescreen the Broad 800K
+  library and identify compound A1, which reduced N. gonorrhoeae titers in an in
+  vivo mouse vaginal infection model.
 Deployment:
   - Local
 Source: Local
@@ -23,7 +23,8 @@ Output:
   - Score
 Output Dimension: 1
 Output Consistency: Fixed
-Interpretation: Higher score indicates greater predicted probability of growth inhibition against Neisseria gonorrhoeae.
+Interpretation: Higher score indicates greater predicted probability of growth 
+  inhibition against Neisseria gonorrhoeae.
 Tag:
   - Antimicrobial activity
   - Gram-negative bacteria
@@ -39,3 +40,4 @@ Publication: https://doi.org/10.1126/scitranslmed.ads4699
 Source Code: https://github.com/jackievaleri/ngonorrhoeae_abx_ml_discovery
 License: MIT
 Contributor: GemmaTuron
+Incorporation Date: '2026-06-24'
