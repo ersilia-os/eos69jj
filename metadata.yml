@@ -2,14 +2,13 @@ Identifier: eos69jj
 Slug: neisseria-gonorrhoeae-activity
 Status: Ready
 Title: N.gonorrhoeae antimicrobial activity
-Description: Deep learning graph neural network (D-MPNN) that predicts the 
-  probability of a small molecule inhibiting Neisseria gonorrhoeae growth. This 
-  is the retrained Round 2 model, trained on duplicate growth-inhibition 
-  screening at 50 uM against N. gonorrhoeae ATCC 49226 for 1755 clinically 
-  approved drugs (Pharmakon), an internal 37K-compound library, and a first 
-  round of experimentally validated hits. It was used to rescreen the Broad 800K
-  library and identify compound A1, which reduced N. gonorrhoeae titers in an in
-  vivo mouse vaginal infection model.
+Description: Predicts growth inhibition of Neisseria gonorrhoeae, where resistance
+  has eroded treatment options to the point that untreatable infection is a realistic
+  prospect. Anahtar and colleagues screened compounds against the organism, trained
+  graph neural networks on the results, and applied them across large virtual libraries.
+  Predicted actives were synthesised and tested, yielding compounds effective in a
+  mouse infection model, which places this among the antibacterial models with prospective
+  experimental support.
 Deployment:
   - Local
 Source: Local
@@ -23,8 +22,7 @@ Output:
   - Score
 Output Dimension: 1
 Output Consistency: Fixed
-Interpretation: Higher score indicates greater predicted probability of growth 
-  inhibition against Neisseria gonorrhoeae.
+Interpretation: Probability that a compound inhibits growth of Neisseria gonorrhoeae.
 Tag:
   - Antimicrobial activity
   - Gram-negative bacteria
