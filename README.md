@@ -1,6 +1,6 @@
 # N.gonorrhoeae antimicrobial activity
 
-Predicts growth inhibition of Neisseria gonorrhoeae, where resistance has eroded treatment options to the point that untreatable infection is a realistic prospect. Anahtar and colleagues screened compounds against the organism, trained graph neural networks on the results, and applied them across large virtual libraries. Predicted actives were synthesised and tested, yielding compounds effective in a mouse infection model, which places this among the antibacterial models with prospective experimental support.
+Scores small molecules for growth inhibition of Neisseria gonorrhoeae, now resistant to every antibiotic class deployed against it. Anahtar and colleagues tested 38,650 compounds at 50 uM against strain ATCC 49226, spanning the Pharmakon library of 1755 approved drugs and an internal 37K collection, and trained a directed message-passing neural network. Served here is their round 2 model, retrained on validated hits, which rescreened the Broad 800K library and surfaced compound A1, active in a mouse vaginal infection model.
 
 This model was incorporated on 2026-06-24.Last packaged on 2026-06-26.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2026-06-24.Last packaged on 2026-06-26.
 ### Output
 - **Output Dimension:** `1`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probability that a compound inhibits growth of Neisseria gonorrhoeae.
+- **Interpretation:** Probability of inhibiting Neisseria gonorrhoeae growth, trained on hit calls from a 50 micromolar screen.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
