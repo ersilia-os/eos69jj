@@ -48,6 +48,7 @@ DockerHub: https://hub.docker.com/r/ersiliaos/eos69jj
 Docker Architecture:
   - AMD64
   - ARM64
+Apptainer: https://models-sif.s3.eu-north-1.amazonaws.com/eos69jj_v1.sif
 Model Size: 442.0
 Environment Size: 4095.0
 Image Size: 4966.4
