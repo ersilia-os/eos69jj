@@ -2,7 +2,8 @@
 
 Scores small molecules for growth inhibition of Neisseria gonorrhoeae, now resistant to every antibiotic class deployed against it. Anahtar and colleagues tested 38,650 compounds at 50 uM against strain ATCC 49226, spanning the Pharmakon library of 1755 approved drugs and an internal 37K collection, and trained a directed message-passing neural network. Served here is their round 2 model, retrained on validated hits, which rescreened the Broad 800K library and surfaced compound A1, active in a mouse vaginal infection model.
 
-This model was incorporated on 2026-06-24.Last packaged on 2026-06-26.
+This model was incorporated on 2026-06-24.
+Last packaged on 2026-06-26.
 
 ## Information
 ### Identifiers
@@ -37,6 +38,7 @@ Below are the **Output Columns** of the model:
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos69jj](https://hub.docker.com/r/ersiliaos/eos69jj)
 - **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos69jj.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos69jj.zip)
+- **Apptainer**: [https://models-sif.s3.eu-north-1.amazonaws.com/eos69jj_v1.sif](https://models-sif.s3.eu-north-1.amazonaws.com/eos69jj_v1.sif)
 
 ### Resource Consumption
 - **Model Size (Mb):** `442`
